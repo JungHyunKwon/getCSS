@@ -7,12 +7,12 @@ try {
 		'use strict';
 		
 		/**
-		 * @name getCSS
+		 * @name getCss
 		 * @since 2019-01-18
 		 * @param {element} element
 		 * @return {object}
 		 */
-		window.getCSS = function(element) {
+		window.getCss = function(element) {
 			var result = {};
 			
 			try {
