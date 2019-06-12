@@ -9,14 +9,14 @@ try {
 		/**
 		 * @name getCss
 		 * @since 2019-01-18
-		 * @param {element} value
+		 * @param {element} element
 		 * @return {object}
 		 */
-		window.getCss = function(value) {
+		window.getCss = function(element) {
 			var result = {};
 			
 			try {
-				result = value.currentStyle || getComputedStyle(value);
+				result = element.currentStyle || getComputedStyle(element);
 			}catch(e) {
 				//throw e;
 			}
