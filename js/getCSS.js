@@ -2,28 +2,24 @@
  * @author JungHyunKwon
  * @version 1.0.0
  */
-try {
-	(function() {
-		'use strict';
+(function() {
+	'use strict';
+	
+	/**
+	 * @name getCss
+	 * @since 2019-01-18
+	 * @param {object} element
+	 * @return {object}
+	 */
+	window.getCss = function(element) {
+		var result = {};
 		
-		/**
-		 * @name getCss
-		 * @since 2019-01-18
-		 * @param {element} element
-		 * @return {object}
-		 */
-		window.getCss = function(element) {
-			var result = {};
-			
-			try {
-				result = element.currentStyle || getComputedStyle(element);
-			}catch(e) {
-				//throw e;
-			}
+		try {
+			result = element.currentStyle || getComputedStyle(element);
+		}catch(e) {
+			//console.error(e);
+		}
 
-			return result;
-		};
-	})();
-}catch(e) {
-	console.error(e);
-}
+		return result;
+	};
+})();
