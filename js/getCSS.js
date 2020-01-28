@@ -9,10 +9,10 @@
 	 * @name getCss
 	 * @since 2019-01-18
 	 * @param {object} value
-	 * @return {object || undefined}
+	 * @return {object}
 	 */
 	window.getCss = function(value) {
-		var result;
+		var result = {};
 		
 		try {
 			result = value.currentStyle || getComputedStyle(value);
