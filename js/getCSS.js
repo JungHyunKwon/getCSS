@@ -8,14 +8,14 @@
 	/**
 	 * @name getCss
 	 * @since 2019-01-18
-	 * @param {object} element
+	 * @param {object} value
 	 * @return {object || undefined}
 	 */
-	window.getCss = function(element) {
+	window.getCss = function(value) {
 		var result;
 		
 		try {
-			result = element.currentStyle || getComputedStyle(element);
+			result = value.currentStyle || getComputedStyle(value);
 		}catch(e) {
 			//console.error(e);
 		}
