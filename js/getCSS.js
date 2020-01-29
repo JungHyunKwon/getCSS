@@ -6,12 +6,12 @@
 	'use strict';
 	
 	/**
-	 * @name getCss
+	 * @name getCSS
 	 * @since 2019-01-18
 	 * @param {object} element
 	 * @return {object || undefined}
 	 */
-	window.getCss = function(element) {
+	window.getCSS = function(element) {
 		var result;
 		
 		try {
